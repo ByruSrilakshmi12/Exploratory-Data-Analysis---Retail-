@@ -42,7 +42,6 @@ So, now we can handle the missing values by using a few techniques, which are
 For our case, we will handle missing values by replacing them with the median value.
 And, now we can see that our dataset doesn’t have any null values now.
 - Step 8
-
 We can check for duplicate values in our dataset as the presence of duplicate values will hamper the accuracy of our ML model.As we can see that the duplicate values are now handled.
 - Step 9
 Handling the outliers in the data, i.e. the extreme values in the data. We can find the outliers in our data using a Boxplot.
@@ -53,8 +52,7 @@ IQR is calculated as the difference between the 25th and the 75th percentile of 
 Normalizing and Scaling – Data Normalization or feature scaling is a process to standardize the range of features of the data as the range may vary a lot. So we can preprocess the data using ML algorithms. So for this, we will use StandardScaler for the numerical values, which uses the formula as x-mean/std deviation.
 - Step 11
 We can find the pairwise correlation between the different columns of the data using the corr() method. (Note – All non-numeric data type column will be ignored.)
-
-happinessData.corr() is used to find the pairwise correlation of all columns in the data frame. Any ‘nan’ values are automatically excluded.
+nameData.corr() is used to find the pairwise correlation of all columns in the data frame. Any ‘nan’ values are automatically excluded.
 
 The resulting coefficient is a value between -1 and 1 inclusive, where:
 
